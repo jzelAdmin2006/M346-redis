@@ -63,7 +63,7 @@ Erhöhen Sie anschliessend mit dem
 [`INCR`](https://redis.io/commands/incr/)-Befehl Ihr Alter um ein Jahr.
 
 Verwenden Sie den [`KEYS`](https://redis.io/commands/keys/)-Befehl, um alle
-Schlüssel anzuzeigen. Gebe Sie anschliessend alle Werte mithilfe des
+Schlüssel anzuzeigen. Geben Sie anschliessend alle Werte mithilfe des
 [`GET`](https://redis.io/commands/get/)-Befehls aus.
 
 ## Aufgabe 2: TODO-Liste
@@ -131,7 +131,9 @@ Stoppen Sie nun die Redis-Sitzung mit `[Ctrl]-[D]`. Exportieren Sie nun alle
 Ihre Endpoints als JSON-Dateien (`endpoint-[identifier].json`), indem Sie den
 Redis-Client mit dem Parameter `--json` und dem Aufruf des [`HGETALL`](https://redis.io/commands/hgetall/) kombinieren:
 
-    $ redis-cli --json HGETALL endpoint:…
+    $ redis-cli --json HGETALL endpoint:… > endpoint-[identifier].json
+
+Speichern Sie diese JSON-Dateien ebenfalls im Repository ab.
 
 ## Zusatzaufgabe A: Weitere Befehle kennenlernen
 
