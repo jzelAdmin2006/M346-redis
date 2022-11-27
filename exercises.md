@@ -1,13 +1,13 @@
 # Übungen zu Redis
 
-Erstellen Sie einen Fork von diesem Repository und klonen Sie ihn.
+1. **Erstellen Sie einen Fork von diesem Repository!**
+2. **Klonen Sie Ihren Fork, nicht das Original-Repository!**
+3. **Reichen Sie Ihre Lösungen per Pull Request ein!**
 
 Dokumentieren Sie Ihre Befehle in Dateien nach dem Format `aufgabe-X.txt`, wobei
 `X` für die Nummer der Aufgabe steht. Dokumentieren Sie auch die Ausgaben Ihrer
 Befehle! Verwenden Sie das Präfix `> ` für Befehlszeilen, um diese von den
 Ausgaben unterscheidbar zu machen.
-
-Erstellen Sie einen Pull Request mit all Ihren Dateien.
 
 ## Aufgabe 0: Mit Redis verbinden
 
