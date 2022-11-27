@@ -172,3 +172,9 @@ Tipp: Verwenden Sie `redis-cli --help` für Hilfestellungen.
 
 Dokumentieren Sie alle Schritte in der Datei `zusatzaufgabe-b.txt`.
 
+## Zusatzaufgabe C: Redis in der Cloud
+
+Folgen Sie der [Videoanleitung](https://www.youtube.com/watch?v=LSRxm72evE0), um
+eine kostenlose Redis-Datenbank in der Cloud zu bekommen. Verbinden Sie sich per
+`redis-cli` mit dieser Datenbank. (Sie brauchen hier nichts zu dokumentieren.)
+
