@@ -1,0 +1,25 @@
+> HSET endpoints endpoint:go-dev "https://go.dev/doc/,HEAD,200,5m0s,1"
+(integer) 1
+127.0.0.1:6379>
+
+
+> HSET endpoints endpoint:libvirt "https://libvirt.org/,GET,200,1m0s,5"
+(integer) 1
+127.0.0.1:6379>
+
+> HSET endpoints endpoint:frickelbude "https://code.frickelbude.ch/api/v1/version,GET,200,1m0s,3"
+(integer) 1
+127.0.0.1:6379>
+
+> HSET endpoints endpoint:stackoverflow "https://stackoverflow.com,GET,200,1m0s,3"
+(integer) 1
+127.0.0.1:6379>
+
+
+> [Ctrl]-[C]
+
+
+> cd redis/
+
+
+> redis-cli --csv HGETALL endpoints > endpoints.csv

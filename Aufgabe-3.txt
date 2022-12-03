@@ -1,0 +1,63 @@
+> SADD mammals Mensch Fledermaus Pferd Gorilla Meerschweinchen Kuh
+
+(integer) 6
+127.0.0.1:6379>
+
+
+> SADD fourlegged Pferd Krokodil Meerschweinchen Kuh Eidechse Leguan
+(integer) 6
+127.0.0.1:6379>
+
+
+> SDIFFSTORE mammalsWhichDontHaveFourLegs mammals fourlegged
+(integer) 3
+127.0.0.1:6379>
+
+
+> SMEMBERS mammalsWhichDontHaveFourLegs
+1) "Gorilla"
+2) "Fledermaus"
+3) "Mensch"
+127.0.0.1:6379>
+
+
+> SDIFFSTORE fourleggedWhichArentMammals fourlegged mammals
+(integer) 3
+127.0.0.1:6379>
+
+
+> SMEMBERS fourleggedWhichArentMammals
+1) "Leguan"
+2) "Krokodil"
+3) "Eidechse"
+127.0.0.1:6379>
+
+
+> SINTERSTORE fourleggedMammals fourlegged mammals
+(integer) 3
+127.0.0.1:6379>
+
+
+> SMEMBERS fourleggedMammals
+1) "Kuh"
+2) "Meerschweinchen"
+3) "Pferd"
+127.0.0.1:6379>
+
+
+> SUNIONSTORE mammalsAndOrFourlegged fourlegged mammals
+(integer) 9
+127.0.0.1:6379>
+
+
+> SMEMBERS mammalsAndOrFourlegged
+1) "Leguan"
+2) "Kuh"
+3) "Eidechse"
+4) "Fledermaus"
+5) "Gorilla"
+6) "Krokodil"
+7) "Meerschweinchen"
+8) "Pferd"
+9) "Mensch"
+127.0.0.1:6379>

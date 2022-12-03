@@ -1,0 +1,67 @@
+> SET my.firstname "Johannes"
+OK
+127.0.0.1:6379>
+
+
+> SET my.lastname "Zeller"
+OK
+127.0.0.1:6379>
+
+
+> SET my.age "16"
+OK
+127.0.0.1:6379>
+
+
+> SET my.residence "Pfaffnau"
+OK
+127.0.0.1:6379>
+
+
+> SET my.favouritefood "Kebab"
+OK
+127.0.0.1:6379>
+
+
+> MSET my.firstname "Johannes" my.lastname "Zeller" my.age "16" my.residence "Pfaffnau" my.favouritefood "Kebab"
+OK
+127.0.0.1:6379>
+
+
+> INCR my.age
+(integer) 17
+127.0.0.1:6379>
+
+
+> KEYS *
+1) "my.lastname"
+2) "my.firstname"
+3) "my.favouritefood"
+4) "my.residence"
+5) "my.age"
+127.0.0.1:6379>
+
+
+> GET my.lastname
+"Zeller"
+127.0.0.1:6379>
+
+
+> GET my.firstname
+"Johannes"
+127.0.0.1:6379>
+
+
+> GET my.favouritefood
+"Kebab"
+127.0.0.1:6379>
+
+
+> GET my.residence
+"Pfaffnau"
+127.0.0.1:6379>
+
+
+> GET my.age
+"16"
+127.0.0.1:6379>

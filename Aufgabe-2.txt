@@ -1,0 +1,20 @@
+> LPUSH TODOLIST "Hausaufgaben machen" "Geschirr Abwaschen" "Duschen"
+(integer) 3
+127.0.0.1:6379>
+
+
+> LRANGE TODOLIST 0 -1
+1) "Duschen"
+2) "Geschirr Abwaschen"
+3) "Hausaufgaben machen"
+127.0.0.1:6379>
+
+
+> LREM TODOLIST -2 "Duschen"
+(integer) 1
+127.0.0.1:6379>
+
+
+> RPOPLPUSH TODOLIST OTHERTODOLIST
+"Hausaufgaben machen"
+127.0.0.1:6379>
